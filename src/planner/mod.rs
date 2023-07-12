@@ -8,6 +8,7 @@ use self::{
     logical_create_table_plan::LogicalCreateTablePlan, logical_select_plan::LogicalSelectPlan,
 };
 
+#[derive(Debug, PartialEq, Clone)]
 pub enum LogicalPlan {
     Select(LogicalSelectPlan),
     CreateTable(LogicalCreateTablePlan),
